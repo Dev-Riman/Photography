@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+// variables color
+$white-clr: #ffffff;
+$dark-clr: #000000;
+$main-clr: #ff9800;
+$grey-clr: #6e6e6e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 9999;
+  border-radius: 50px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+}
+header {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .navbar {
+    background: transparent;
+  }
+  .sticky {
+    background: $white-clr;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    color: $white-clr;
+    .navbar-brand,
+    .nav-link {
+      color: $dark-clr;
+    }
+  }
+  .navbar-brand {
+    font-weight: 700;
+    color: $white-clr;
+    font-size: 2rem;
+    &:hover {
+      color: $main-clr;
+    }
+  }
+  .nav-link {
+    margin: 0 1rem;
+    font-weight: 600;
+    color: $white-clr;
+    font-size: 1.4rem;
+    &:hover {
+      color: $main-clr;
+    }
+  }
+}
+#banner-image {
+  background-image: linear-gradient(
+      0deg,
+      rgba(12, 11, 12, 0.74),
+      rgba(47, 49, 47, 0.61)
+    ),
+    url(../img/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  height: 40rem;
+  background-position: 0;
+  position: relative;
+}
+#sub-title {
+  color: $white-clr;
+  font-weight: 500;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+}
+#title {
+  color: $white-clr;
+  font-weight: 700;
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+#scroll-down {
+  position: absolute;
+  bottom: 5%;
+  color: $white-clr;
+  font-size: 3rem;
+  font-weight: 100;
+  left: 50%;
+  cursor: pointer;
+}
+#squire-box {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid $main-clr;
+}
+#about {
+  position: relative;
+  #squire-box-yellow {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid $main-clr;
+  }
+  #about-me {
+    position: relative;
+    margin-left: 2%;
+    font-weight: 600;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 0.3rem;
+      background-color: $main-clr;
+      left: 0;
+      bottom: -0.5rem;
+    }
+  }
+  #about-description {
+    color: $grey-clr;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+  }
+  #achivements {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    .achive {
+      text-align: center;
+      align-items: center;
+      .achive-num {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      .achive-name {
+        color: $grey-clr;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+  }
+  #contact-button {
+    margin-top: 3rem;
+    border: none;
+    outline: none;
+    width: 15rem;
+    height: 4rem;
+    background-color: $main-clr;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border-radius: 3rem;
+    text-align: center;
+    align-items: center;
+    color: $white-clr;
+    font-weight: 500;
+  }
+}
+#do {
+  position: relative;
+  #do-title {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 700;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 5%;
+      height: 0.3rem;
+      background-color: $main-clr;
+      left: 1rem;
+      bottom: -0.5rem;
+    }
+  }
+  .service-content {
+    position: relative;
+    .service-title {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+      background-color: #151c1f;
+      .service-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white-clr;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+#work {
+    #work-title {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 700;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3%;
+      height: 0.3rem;
+      background-color: $main-clr;
+      left: 1rem;
+      bottom: -0.5rem;
+    }
+  }
+}
