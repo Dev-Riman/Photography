@@ -57,8 +57,7 @@ header .nav-link {
 header .nav-link:hover {
   color: #ff9800;
 }
-
-#banner-image {
+header #banner-image {
   background-image: linear-gradient(0deg, rgba(12, 11, 12, 0.74), rgba(47, 49, 47, 0.61)), url(../img/home-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,29 +67,28 @@ header .nav-link:hover {
   background-position: 0;
   position: relative;
 }
-
-#sub-title {
+header #sub-title {
   color: #ffffff;
   font-weight: 500;
   position: absolute;
   bottom: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 1.4rem;
   letter-spacing: 0.5rem;
 }
-
-#title {
+header #title {
   color: #ffffff;
   font-weight: 700;
   position: absolute;
   bottom: 40%;
-  left: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   letter-spacing: 1rem;
   text-transform: uppercase;
   font-size: 3.5rem;
 }
-
-#scroll-down {
+header #scroll-down {
   position: absolute;
   bottom: 5%;
   color: #ffffff;
@@ -99,8 +97,7 @@ header .nav-link:hover {
   left: 50%;
   cursor: pointer;
 }
-
-#squire-box {
+header #squire-box {
   position: absolute;
   top: 20%;
   right: 5%;
@@ -229,4 +226,28 @@ header .nav-link:hover {
   background-color: #ff9800;
   left: 1rem;
   bottom: -0.5rem;
+}
+
+#contact #contact-img {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+#contact #contact-img #contact-me-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  color: #ffffff;
+  border-bottom: 0.2rem solid #ffffff;
+}
+#contact #contact-img #contact-form {
+  position: absolute;
+  background-color: #ffffff;
+  color: #000000;
+  width: 80%;
+  padding: 1rem;
+  bottom: 30%;
+  left: 10%;
 }/*# sourceMappingURL=main.css.map */
