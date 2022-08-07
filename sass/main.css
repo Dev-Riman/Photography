@@ -250,4 +250,64 @@ header #squire-box {
   padding: 1rem;
   bottom: 30%;
   left: 10%;
+}
+
+#contact {
+  position: relative;
+}
+#contact #contact-img {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+#contact #contact-img img {
+  height: 50rem;
+  width: 100%;
+}
+#contact #contact-img #contact-me-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  color: #ffffff;
+  border-bottom: 0.2rem solid #ffffff;
+}
+#contact #contact-form {
+  background-color: #ffffff;
+  position: absolute;
+  top: 70%;
+  padding: 1rem;
+  width: 70%;
+  margin-left: 7%;
+}
+#contact #contact-form .form-label {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#contact #contact-form input[type=text],
+#contact #contact-form input[type=email],
+#contact #contact-form textarea {
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(63, 62, 62, 0.151);
+  font-style: italic;
+}
+#contact #contact-form #submit-button {
+  margin: auto;
+  margin-top: 3rem;
+  border: none;
+  outline: none;
+  width: 15rem;
+  height: 4rem;
+  background-color: #ff9800;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border-radius: 3rem;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

@@ -262,3 +262,69 @@ header {
     }
   }
 }
+#contact {
+  position: relative;
+
+  #contact-img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 50rem;
+      width: 100%;
+    }
+
+    #contact-me-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99999;
+      color: $white-clr;
+      border-bottom: .2rem solid $white-clr;
+    }
+  }
+
+  #contact-form {
+    background-color: $white-clr;
+    position: absolute;
+    top: 70%;
+    padding: 1rem;
+    width: 70%;
+    margin-left: 7%;
+
+    .form-label {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      border: none;
+      outline: none;
+      font-size: 1.3rem;
+      width: 100%;
+      border-bottom: 1px solid rgba(63, 62, 62, 0.151);
+      font-style: italic;
+    }
+
+    #submit-button {
+      margin: auto;
+      margin-top: 3rem;
+      border: none;
+      outline: none;
+      width: 15rem;
+      height: 4rem;
+      background-color: $main-clr;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      border-radius: 3rem;
+      text-align: center;
+      align-items: center;
+      color: $white-clr;
+      font-weight: 500;
+    }
+  }
+}
