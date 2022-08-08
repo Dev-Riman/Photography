@@ -158,36 +158,36 @@
 	<!-- my work -->
 	<section id="work">
 		<div class="container mt-5">
-			<div class="row">
+			<div class="row img-gallery">
 				<h1 id="work-title">my work</h1>
 				<div class="col-md-4 g-4">
 					<div class="service-content">
-						<img src="./img/works/thumb/1.jpg" alt="" class="img-fluid">
+						<a href="./img/works/thumb/1.jpg" target="_blank"><img src="./img/works/thumb/1.jpg" alt="" class="img-fluid"></a>						
 					</div>
 				</div>
 				<div class="col-md-4 g-4">
 					<div class="service-content">
-						<img src="./img/works/thumb/2.jpg" alt="" class="img-fluid">
+						<a href="./img/works/thumb/2.jpg" target="_blank"><img src="./img/works/thumb/2.jpg" alt="" class="img-fluid"></a>
 					</div>
 				</div>
 				<div class="col-md-4 g-4">
 					<div class="service-content">
-						<img src="./img/works/thumb/3.jpg" alt="" class="img-fluid">
+						<a href="./img/works/thumb/3.jpg" target="_blank"><img src="./img/works/thumb/3.jpg" alt="" class="img-fluid"></a>
 					</div>
 				</div>
 				<div class="col-md-4 g-4">
 					<div class="service-content">
-						<img src="./img/works/thumb/4.jpg" alt="" class="img-fluid">
+						<a href="./img/works/thumb/4.jpg" target="_blank"><img src="./img/works/thumb/4.jpg" alt="" class="img-fluid"></a>
 					</div>
 				</div>
 				<div class="col-md-4 g-4">
 					<div class="service-content">
-						<img src="./img/works/thumb/5.jpg" alt="" class="img-fluid">
+						<a href="./img/works/thumb/5.jpg" target="_blank"><img src="./img/works/thumb/5.jpg" alt="" class="img-fluid"></a>
 					</div>
 				</div>
 				<div class="col-md-4 g-4">
 					<div class="service-content">
-						<img src="./img/works/thumb/6.jpg" alt="" class="img-fluid">
+						<a href="./img/works/thumb/6.jpg" target="_blank"><img src="./img/works/thumb/6.jpg" alt="" class="img-fluid"></a>
 					</div>
 				</div>
 			</div>
@@ -256,6 +256,11 @@
 			$('.counter').counterUp({
 				delay: 10,
 				time: 1000
+			});
+			$('.img-gallery').magnificPopup({
+				type: 'image',
+				delegate: 'a',
+				gallery: { enabled: true }
 			});
 		});
 	</script>
