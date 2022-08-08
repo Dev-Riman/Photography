@@ -28,7 +28,7 @@ html {
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
 }
 
-header {
+#header {
   .nav {
     position: fixed;
     top: 0;
@@ -39,7 +39,6 @@ header {
   .navbar {
     background: transparent;
   }
-
   .sticky {
     background: $white-clr;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -50,7 +49,6 @@ header {
       color: $dark-clr;
     }
   }
-
   .navbar-brand {
     font-weight: 700;
     color: $white-clr;
@@ -60,7 +58,6 @@ header {
       color: $main-clr;
     }
   }
-
   .nav-link {
     margin: 0 1rem;
     font-weight: 600;
@@ -71,12 +68,7 @@ header {
       color: $main-clr;
     }
   }
-
-  #banner-image {
-    background-image: linear-gradient(0deg,
-        rgba(12, 11, 12, 0.74),
-        rgba(47, 49, 47, 0.61)),
-      url(../img/home-bg.jpg);
+  #banner-image img{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -172,7 +164,7 @@ header {
       text-align: center;
       align-items: center;
 
-      .achive-num {
+      #achive-num {
         font-size: 3rem;
         font-weight: 700;
       }
