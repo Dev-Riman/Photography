@@ -27,7 +27,7 @@ html {
   border-radius: 50px;
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
 }
-
+// header section
 #header {
   .nav {
     position: fixed;
@@ -120,7 +120,7 @@ html {
     border: 0.2rem solid $main-clr;
   }
 }
-
+// about section
 #about {
   position: relative;
 
@@ -194,7 +194,7 @@ html {
     font-weight: 500;
   }
 }
-
+// services section
 #do {
   position: relative;
 
@@ -216,7 +216,12 @@ html {
 
   .service-content {
     position: relative;
-
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover img{
+      transform: scale(1.1);
+    }
     .service-title {
       position: absolute;
       top: 0;
@@ -241,7 +246,7 @@ html {
     }
   }
 }
-
+// work section
 #work {
   #work-title {
     position: relative;
@@ -259,6 +264,7 @@ html {
     }
   }
 }
+// contact section
 #contact {
   position: relative;
 
@@ -325,7 +331,7 @@ html {
     }
   }
 }
-
+// footer & social section
 #social {
   margin-top: 20%;
   text-align: center;
