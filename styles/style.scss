@@ -68,7 +68,7 @@ html {
       color: $main-clr;
     }
   }
-  #banner-image img{
+  #banner-image img {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -259,35 +259,6 @@ html {
     }
   }
 }
-
-#contact {
-  #contact-img {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-
-    #contact-me-title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 99999;
-      color: $white-clr;
-      border-bottom: .2rem solid $white-clr;
-    }
-
-    #contact-form {
-      position: absolute;
-      background-color: $white-clr;
-      color: $dark-clr;
-      width: 80%;
-      padding: 1rem;
-      bottom: 30%;
-      left: 10%;
-    }
-  }
-}
-
 #contact {
   position: relative;
 
@@ -308,14 +279,14 @@ html {
       transform: translate(-50%, -50%);
       z-index: 99999;
       color: $white-clr;
-      border-bottom: .2rem solid $white-clr;
+      border-bottom: 0.2rem solid $white-clr;
     }
   }
 
   #contact-form {
     background-color: $white-clr;
     position: absolute;
-    top: 70%;
+    bottom: -20rem;
     padding: 1rem;
     width: 70%;
     margin-left: 7%;
@@ -325,8 +296,8 @@ html {
       font-weight: 500;
     }
 
-    input[type='text'],
-    input[type='email'],
+    input[type="text"],
+    input[type="email"],
     textarea {
       border: none;
       outline: none;
@@ -351,6 +322,29 @@ html {
       align-items: center;
       color: $white-clr;
       font-weight: 500;
+    }
+  }
+}
+
+#social {
+  margin-top: 20%;
+  text-align: center;
+  h3 {
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .social-icons i {
+    padding: 0 1rem;
+  }
+  .creadit {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    a {
+      text-decoration: none;
+      color: $main-clr;
+      font-weight: 600;
     }
   }
 }
